@@ -1,0 +1,90 @@
+<!--Below line specifies document declaration-->
+<!DOCTYPE html>
+<!--start of HTML Page-->
+<html>
+    <!--Start of Head of the HTML Page-  -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Movie Information</title>
+          <!-- BootStrap stylesheet link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+         <!-- Fontawesome stylesheet link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- External Stylesheet -->
+        <link rel="stylesheet" href="moviestyle.css">
+        
+        <!--End of Head of the HTML Page-->
+    </head>
+    <!-- Start of Body Tag -->
+    <body>
+        <!-- Start of Header/NavBar containing Logo and Favorite list link Page -->
+        <nav class="nav-bar bg-dark">
+            <div class="header container-fluid d-flex ">
+                <div id="logo " class="col-lg col-sm-2 my-0 nav-item py-3">
+                    <a href="index.html"><img class="mx-0" src="./assets/Free_Sample_By_Wix.jpg" alt="Mini IMDB Logo"></a>
+                </div>
+                <div class="home col-sm-0 my-3 ">
+                    <a href="./index.html"><button id="return-to-home"><i class="fas fa-home"></i></button></a>
+                </div>
+            </div>
+            <!-- End of Header/NavBar containing Logo, Search bar and Favorite list link Page -->
+        </nav>
+
+        <div id="main">
+             <!-- Start of Movie Container  -->
+            <div class="movide-container d-flex align-items-center vw-80 vh-100 mx-5 ">
+                <div id="movie-page" class="movie-page d-flex align-items-center h-auto" style="height: inherit; width: inherit;">
+                    <!-- <div class="movie-poster my-0 mx-5 h-90">
+                        <img id="poster" class="h-100 w-auto" src="https://m.media-amazon.com/images/M/MV5BMmQ4YmM3NjgtNTExNC00ZTZhLWEwZTctYjdhOWI4ZWFlMDk2XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="poster">
+                    </div>
+
+                    <div class="movie-details">
+                        <div class="movie-title my-2 font-monospace">
+                            Pushpa: The rise Part-1
+                        </div>
+                        <div class="movie-tagline">
+                            Tagline
+                        </div>
+                        <div class="movie-duration-release-date-trailer d-flex flex-column my-2 ">
+                            <div class="movie-duration">
+                                <i class="fas fa-clock"></i> 179 min
+                            </div>
+                            <div class="release">
+                                Released:2021
+                            </div>
+                            <div class="language">
+                                Language
+                            </div>
+                            <div class="actors">
+                                Actrors
+                            </div>
+                            <div class="movie-rating">
+                                Rating: ..
+                            </div>
+                             <div class="trailer-info" id="trailer">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="trailer-video">
+                                <button id="close-video-player"><i class="fas fa-times"></i></button>
+                                <span></span>
+                            </div> -->
+                           <!-- <h2>Plot</h2>
+                            <div class="plot">
+                                Wait for the plot..
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+             <!-- End of Movie Container  -->
+        </div>
+         <!-- FontAwesome related JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- BootStrap related JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--JavaScript file for this page -->
+    <script src="moviePagescript.js"></script>
+     <!-- End of Body Tag -->
+    </body>
+</html>

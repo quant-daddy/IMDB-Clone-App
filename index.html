@@ -1,0 +1,72 @@
+<!--Below line specifies document declaration-->
+<!DOCTYPE html>
+<!--start of HTML Page-->
+<html>
+    <!--Start of Head of the HTML Page-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> IMDB clone App</title>
+        <!-- BootStrap stylesheet link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- Fontawesome stylesheet link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- External Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!--End of Head of the HTML Page-->
+    </head>
+    <!-- Start of Body Tag -->
+    <body>
+        <!-- Start of Header/NavBar containing Logo, Search bar and Favorite list link Page -->
+        <nav class="navbar bg-dark col-sm-12">
+        <div class="header container-fluid d-flex flex-row">
+            <div id="logo " class="col-lg col-sm-2 my-0 nav-item">
+                <a href="index.html"><img class="mx-0" src="./assets/Free_Sample_By_Wix.jpg" alt="Mini IMDB Logo"></a>
+            </div>
+        <div id="search" class="nav-item col-lg-5 col-sm-4  d-flex ">
+            <input id="search-movie" onkeyup="findMovies()" onclick="findMovies()"  type="text" placeholder="type movie name" autocomplete="on">
+            <div class = "search-list" id = "search-list"></div>
+        </div>
+        <div id="favorite" class="text-light nav-item d-flex fw-bold  col-sm-2">
+            <a class="nav-link mt-2" href="./favorite.html"><p class="">My Favorite List</p></a>
+        </div>
+        </div>
+        <!-- End of Header or NavBar -->
+    </nav>
+    <!-- Start of Movie Container  -->
+    <div id="movie-info-container">
+        <!-- Start of Movie element -->
+        <div class="movie-element" id="movie-element">
+            <!-- <div class="movie-poster">
+                <a href="#"><img src="https://m.media-amazon.com/images/M/MV5BMmQ4YmM3NjgtNTExNC00ZTZhLWEwZTctYjdhOWI4ZWFlMDk2XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="poster"></a>
+            </div>
+            <div class="movie-title">Pushpa: The rise Part-1</div>
+            <div class="movie-tags">
+                <div class="movie-rating">
+                    7.6 <i class=" fas fa-star rating-class"></i>
+                </div>
+                <div class="add-movie-to-list" id="add-movie-to-list">
+                    <i onclick="" id="plusSymbol" class="fas fa-plus plusSymbol" ></i>
+                </div>
+            </div> -->
+        </div>
+        <!-- <div id="list-added-status" class="list-added-info">
+            Added to the favorite list
+        </div> -->
+        <!-- toast Message -->
+        <div class="toast position-fixed bottom-0 end-0 p-2" role="alert" aria-live="polite" aria-atomic="true" data-delay="1000">
+            <div class="toast-body text-bg-success font-monospace" role="alert" aria-live="assertive" aria-atomic="true">Added to the favorite list</div>
+          </div>
+
+          <!-- End of Movie Container -->
+    </div>
+   <!-- FontAwesome related JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- BootStrap related JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--JavaScript file for this page -->
+    <script src="script.js"></script>
+         <!-- End of Body Tag -->
+    </body>
+</html>

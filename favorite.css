@@ -1,0 +1,87 @@
+/* Heading related */
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/* Clear all button related */
+
+#clear-btn{
+    border: none;
+    background: none;
+    position: absolute;
+    right: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#clear-btn:hover{
+    background: blueviolet;
+    text-decoration: underline;
+}
+
+/* Movie list display container related */
+.movie-container{
+    padding-top: 15px;
+}
+
+.list-item{
+    height: 80px;
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid black 2px;
+    background-color: black;
+    color: white;
+
+}
+
+.movie-details{
+    display: flex;
+    align-items:center;
+}
+/* To delete movie from the list */
+.delete-movie-from-list{
+    position: absolute;
+    right: 60px;
+}
+.delete-movie-from-list:hover{
+    transform: scale(0.8);
+}
+/* Movie poster display related  in the list */
+.thumbnail{
+    width: 40px;
+    height: 65px;
+}
+
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    min-width: 50px;
+}
+/* Movie title in the list related */
+.title{
+    margin-left: 20px;
+}
+.title a{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.title a:hover{
+    color: yellow;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.title span{
+    margin-left: 5px;
+    font-size: 1.1rem;
+}
+
+

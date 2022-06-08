@@ -1,0 +1,101 @@
+/* To import the font */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap');
+/* Page attributes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    font-size: 18px;
+}
+/* Body attributes */
+
+body{
+    background-image: url(./assets/26105.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Home button related  */
+.home button{
+    color: white;
+    background: none;
+    border: none;
+}
+
+
+#return-to-home{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#return-to-home:hover{
+    color: grey;
+}
+
+
+/* Movie Details related */
+
+
+.movie-details >*{
+    margin: 20px 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.movie-title{
+    font-size: 2rem;
+    color: crimson;
+    border-bottom: 2px black solid;
+}
+
+.movie-duration-release-date-trailer >*{
+    margin: 6px 0;
+}
+
+.movie-duration,.release{
+    padding-right: 30px;
+}
+/* Movie poster */
+.movie-poster img{
+
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Title of the movie */
+h2{
+    color: crimson;
+}
+/* Plot related */
+.plot{
+    max-width: 800px;
+    border-top: 2px solid black;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width:900px ){
+
+    #logo{
+        width: 50px;
+        margin-left: 0;
+
+        
+    }
+    .home{
+        display: none;
+    }
+
+    .movie-details{
+        position: absolute;
+        top: 600px;
+    }
+   
+
+    
+    
+}
+
