@@ -12,7 +12,7 @@ listArray.forEach(async id=>{
 
 // Retrieving the each item of the list by id
 async function loadMovies(id){
-    const URL = `http://www.omdbapi.com/?i=${id}&apikey=6741a269`;
+    const URL = `https://www.omdbapi.com/?i=${id}&apikey=6741a269`;
     console.log(URL);
     const res = await fetch(`${URL}`);
     const movieDetails = await res.json();

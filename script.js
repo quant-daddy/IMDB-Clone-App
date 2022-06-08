@@ -15,7 +15,7 @@ const addtoList = document.getElementById('add-movie-to-list');
 
 //Function to retrieve search list 
 async function loadMovies(searchTerm){
-    const URL = `http://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=6741a269`;
+    const URL = `https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=6741a269`;
     const res = await fetch(`${URL}`);
     const data = await res.json();
     console.log(data.Search);
@@ -59,7 +59,7 @@ function loadMovieDetails(){
             // console.log(movie.dataset.id);
             searchList.classList.add('hide-search-list');
             searchInput.value = "";
-            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
+            const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
             const movieDetails = await result.json();
             // console.log(movieDetails);
             displayMovieDetails(movieDetails);
