@@ -6,6 +6,23 @@
     font-size: 40px;
 }
 
+/* Home button related  */
+.home button{
+    color: white;
+    background: none;
+    border: none;
+}
+
+
+#return-to-home{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#return-to-home:hover{
+    color: grey;
+}
+
 /* Clear all button related */
 
 #clear-btn{
