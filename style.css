@@ -197,3 +197,29 @@ body{
     
 }
 
+
+@media only screen and (max-width:467px ){
+
+    #logo{
+        width: 10%;
+        position: absolute;
+        left: 0px;
+
+    }
+
+    #search{
+        margin-left: 40px;
+        width: 100px;
+    }
+    .search-list{
+        width: 100px;
+    }
+    .navbar #favorite{
+        margin-right: 0;
+        overflow-wrap: break-word;
+        text-size-adjust: auto;   
+    }
+    
+    
+}
+
